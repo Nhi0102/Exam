@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/homeLayoutNTPNhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết món ăn"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imbanhmi_NTPNhi"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banhmi" />
+
+        <TextView
+            android:id="@+id/tvTenMon_NTPNhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bánh mì đặc biệt"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgSize_NTPNhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/rbSmall_NTPNhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size nhỏ"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbLarge_NTPNhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Size lớn"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvGiaNTPNhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá: 25.000 VNĐ"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvMoTaNTPNhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả: Bánh mì giòn rụm, nhân đầy đặn gồm thịt nướng, pate, dưa leo, rau thơm và nước sốt đặc biệt."
+            android:layout_marginTop="8dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDiaChiNTPNhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: 123 Nguyễn Văn Cừ, Quận 5, TP.HCM"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btnGioHang_NTPNhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_add"
+            android:contentDescription="Thêm vào giỏ hàng"
+            android:layout_marginTop="16dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:padding="8dp" />
+    </LinearLayout>
+</ScrollView>
